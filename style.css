@@ -1,0 +1,84 @@
+:root {
+    --background-color: rgb(34, 35, 35);
+    --border-color: rgb(73, 73, 73);
+    background-color: var(--background-color);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color); 
+}
+
+main {
+
+    /* flex-grow: 1; */
+    height: 89%;
+    /* background-color: red; */
+
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+a {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+nav > .nav-section {
+    padding: 50px 40px;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+    flex-basis: calc(100% / 3);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: solid 1px white;
+    gap: 0;
+    
+}
+
+.grid-container * {
+    border: solid 1px var(--border-color);
+}
+
+.one {
+    grid-column: 1;
+
+    
+    img {
+        min-width: 100%;
+    }
+}
+
+.two {
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+
+
+
+
