@@ -56,13 +56,13 @@ nav > .nav-section {
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    border: solid 1px white;
+    border: solid var(--border-color);
     gap: 0;
     
 }
 
 .grid-container * {
-    border: solid 1px var(--border-color);
+    
 }
 
 .one {
@@ -71,12 +71,24 @@ nav > .nav-section {
     
     img {
         min-width: 100%;
+        max-width: 100%;
     }
 }
 
 .two {
     grid-column: 3;
     grid-row: 1 / 3;
+    pre {
+        text-wrap: wrap;
+        line-height: 2.5;
+    }
+    
+}
+
+.three {
+    pre {
+        line-height: 2.5;
+    }
 }
 
 
